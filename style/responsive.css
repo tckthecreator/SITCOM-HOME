@@ -52,3 +52,10 @@
         margin-bottom: 4px;
     }
 }
+
+@media screen and (max-width:402px) {
+    main .filme-principal .container .titulo {
+        font-size: 36px;
+        padding-top: 30px;
+    }
+}

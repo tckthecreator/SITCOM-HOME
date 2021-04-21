@@ -14,6 +14,16 @@
     <link rel="StyleSheet" href="style/owl/owl.carousel.min.css">
     <link rel="StyleSheet" href="style/owl/owl.theme.default.min.css">
 
+    <script language=javascript type='text/javascript'>
+        function newPopup() {
+            varwindow = window.open (
+                'popup.html',
+                'popup',
+                "width=600, height=700, top=100, left=110, scrollbars=no "
+            )
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -22,7 +32,7 @@
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Minha Lista</a>
-                <a href="#">Populares</a>
+                <a class="coringa" href="#">Populares</a>
                 <a href="#">
                     <span class="Desktop">Filtrar por Ano</span>
                     <span class="Mobile">Filtros</span>
@@ -34,19 +44,19 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">Friends (1994)</h3>
-                <p class="descricao">Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York.</p>
+                <p class="descricao">Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam viver e amar em Nova York.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="javascript:newPopup() ; return false">
                         <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
+                        ASSISTIR TRAILER
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="window.open('https://www.themoviedb.org/tv/1668-friends')">
                         <i class="fas fa-info-circle"></i>
-                        <a href="https://www.themoviedb.org/tv/1668-friends" target="_blank">MAIS INFORMAÇÕES</a>
+                        MAIS INFORMAÇÕES
                     </button>
-                </div>
                 </div>
             </div>
+        </div>
     </main>
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
